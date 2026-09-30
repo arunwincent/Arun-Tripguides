@@ -1,0 +1,582 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    color: #002214;
+}
+
+.navbar1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+.navbar1-title h1 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    margin-left: 150px;
+}
+
+.navbar1-heads {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.navbar1-heads h3,
+.navbar1-heads i {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.navbar1-heads i {
+    font-size: 18px;
+}
+
+.navbar1-heads h3:hover,
+.navbar1-heads i:hover {
+    background-color: #f2f2f2;
+}
+
+.navbar1-heads__n1 {
+    border: solid rgb(0, 170, 108) 1.5px;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-weight: 700 !important;
+    box-shadow: 0 0 10px rgba(0, 170, 108, 0.4);
+    animation: pulsingGlow 2s infinite ease-in-out;
+}
+
+.navbar1-heads__n1:hover {
+    background-color: transparent;
+}
+
+/* Sign In button */
+.navbar1-heads__n2 {
+    background-color: #002214;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.navbar1-heads__n2:hover {
+    background-color: #002214 !important;
+    color: white !important;
+}
+
+@keyframes pulsingGlow {
+    0% { box-shadow: 0 0 8px rgba(0, 170, 108, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(0, 138, 88, 0.85); }
+    100% { box-shadow: 0 0 8px rgba(0, 170, 108, 0.3); }
+}
+
+.navbar2-title {
+    color: #002214;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sub-nav__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.sub-nav__item:hover {
+    border-bottom-color: #002214;
+}
+
+.navbar3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.navbar3-container {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: white;
+}
+
+.navbar3-container__p1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-grow: 1;
+    color: #002214;
+}
+
+.navbar3-container__p1 input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    color: #757575;
+}
+
+.navbar3-container__p2,
+.navbar3-container__p3 {
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.navbar3-container__p2 { color: #002214; }
+.navbar3-container__p3 { background-color: #00c853; color: black; }
+
+.navbar3-container__p2:hover { background-color: #f5f5f5; }
+.navbar3-container__p3:hover { background-color: #00c853; }
+.trip-imagebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00c853;
+    width: 75%;
+    height: 325px;
+    padding: 30px;
+    margin: 50px auto 60px auto;
+    border-radius: 30px;
+}
+
+.trip-imagebox_1 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 45px;
+}
+
+.trip-imagebox_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.trip-imagebox_text-side {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.trip-imagebox_heading1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #000000;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.trip-imagebox_heading2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.trip-btn, .trip1-btn {
+    font-family: "Gabarito", sans-serif;
+    font-size: 17px;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.trip-btn { background-color: #000000; color: #ffffff; }
+.trip-btn:hover { background-color: #212121; }
+
+.trip1-imagebox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 90%;
+    height: 350px;
+    padding: 30px;
+    margin: 50px auto 60px auto;
+    border-radius: 30px;
+}
+
+.trip1-imagebox_1 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 45px;
+}
+
+.trip1-imagebox_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.trip1-imagebox_text-side {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.trip1-imagebox_heading1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.trip1-imagebox_heading2 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.trip1-btn { background-color: white; color: black; }
+.trip-imagebox2, .ootytrip-imagebox3, .delhitrip-imagebox4, .paristrip-imagebox5, .icontrip-imagebox6 {
+    padding: 50px;
+    margin-left: 125px;
+    margin-right: 125px;
+    font-family: sans-serif;
+}
+
+.trip-imagebox2_container, .ootytrip-imagebox3_container, .delhitrip-imagebox4_container, .paristrip-imagebox5_container, .icontrip-imagebox6_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.trip-imagebox2-card, .ootytrip-imagebox3-card, .delhitrip-imagebox4-card, .paristrip-imagebox5-card, .icontrip-imagebox6-card {
+    width: 24%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.icontrip-imagebox6-card {
+    border: solid black 1px;
+}
+
+.trip-imagebox2-card img, .ootytrip-imagebox3 img, .delhitrip-imagebox4 img, .paristrip-imagebox5 img, .icontrip-imagebox6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-imagebox2_title {
+    font-size: 18px;
+    font-family: "Gabarito", sans-serif;
+}
+.trip-imagebox2_title p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.trip-image-overlay, .ooty-description, .delhi-description, .paris-description, .icon-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.trip-image-overlay {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.ooty-description {
+    background: linear-gradient(to top, rgba(20, 18, 18, 0.9), transparent);
+}
+
+.ooty-description p, .delhi-description p, .paris-description p, .icon-description p {
+    margin: 5px 0 0 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column { min-width: 0; }
+.footer-column h3 { font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #000; }
+.footer-column ul { list-style: none; padding: 0; margin: 0; }
+.footer-column li { margin-bottom: 10px; }
+.footer-column a { font-size: 18px; color: #4a4a4a; text-decoration: none; }
+.footer-column a:hover { text-decoration: underline; }
+.sub-section { margin-top: 30px; }
+
+.bottomfooter {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    font-size: 20px;
+    padding: 25px;
+    background-color: #efeded;
+}
+.socialbottom { vertical-align: top; font-size: 25px; }
+@media (max-width: 768px) {
+  
+  /* 1. Navigation Alignment Updates */
+  .navbar1 {
+    flex-direction: column !important; 
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 12px 15px !important;
+  }
+
+  .navbar1-title h1 {
+    margin-left: 0 !important; 
+    font-size: 22px !important;
+    justify-content: center;
+  }
+
+  .navbar1-heads {
+    margin-right: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important; 
+    gap: 12px !important;
+  }
+
+  .navbar1-heads h3:not(.navbar1-heads__n1):not(.navbar1-heads__n2),
+  .navbar1-heads i {
+    display: none !important;
+  }
+
+  .navbar1-heads__n1,
+  .navbar1-heads__n2 {
+    font-size: 13px !important;
+    padding: 8px 16px !important;
+    white-space: nowrap !important;
+  }
+
+  .navbar2-title {
+    font-size: 24px;
+    margin-top: 35px;
+  }
+
+  .navbar2 {
+    gap: 15px;
+    font-size: 14px;
+    overflow-x: auto; 
+    padding: 0 10px;
+    justify-content: flex-start;
+  }
+
+  .navbar3-container {
+    width: 92%;
+  }
+
+  .navbar3-container__p1 input {
+    font-size: 15px;
+  }
+
+  /* 2. Hero Component Sections */
+  .trip-imagebox,
+  .trip1-imagebox {
+    flex-direction: column-reverse;
+    height: auto !important;
+    width: 92%;
+    padding: 20px;
+    margin: 25px auto;
+    gap: 20px;
+  }
+
+  .trip-imagebox_1,
+  .trip1-imagebox_1 {
+    margin-left: 0 !important;
+    width: 100%;
+    height: 190px;
+  }
+
+  .trip-imagebox_heading1,
+  .trip1-imagebox_heading1 {
+    font-size: 26px !important;
+  }
+
+  /* 3. Section Container Adjustments (Fixes Overlapping & Heights) */
+  .trip-imagebox2, .ootytrip-imagebox3, .delhitrip-imagebox4, .paristrip-imagebox5, .icontrip-imagebox6 {
+    padding: 15px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: auto !important;        /* Crucial: lets sections dynamically expand vertically */
+    clear: both !important;
+  }
+
+  .trip-imagebox2_container, 
+  .ootytrip-imagebox3_container, 
+  .delhitrip-imagebox4_container, 
+  .paristrip-imagebox5_container, 
+  .icontrip-imagebox6_container {
+    display: grid !important; 
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 20px 16px !important;    /* Increased row gap to prevent overlapping text */
+    margin-top: 15px;
+    height: auto !important;        /* Overrides desktop fixed layout boxes */
+  }
+
+  /* 4. Individual Grid Card Overrides */
+  .trip-imagebox2-card, 
+  .ootytrip-imagebox3-card, 
+  .delhitrip-imagebox4-card, 
+  .paristrip-imagebox5-card, 
+  .icontrip-imagebox6-card {
+    width: 100% !important;
+    height: auto !important;                          
+    display: flex !important;
+    flex-direction: column !important;               
+    position: relative !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;           /* Fixes the black outline boxes cropping things */
+    overflow: visible !important;      /* Forces text to render completely */
+  }
+
+  /* 5. Images Sizing Framework */
+  .trip-imagebox2-card img, 
+  .ootytrip-imagebox3-card img, 
+  .delhitrip-imagebox4-card img, 
+  .paristrip-imagebox5-card img, 
+  .icontrip-imagebox6-card img {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;                  
+    object-fit: cover !important;                    
+    border-radius: 12px !important;                  
+    display: block !important;
+    height: auto !important;
+  }
+
+  /* 6. Typography Overlay & Descriptions Adjustments */
+  .trip-image-overlay, 
+  .ooty-description, 
+  .delhi-description, 
+  .paris-description, 
+  .icon-description {
+    position: relative !important;                    
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    padding: 10px 0 0 0 !important;                   
+    background: none !important;                     
+    color: #111111 !important;                         
+    width: 100% !important;
+    height: auto !important;
+    text-align: left !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
+  }
+
+  /* Headings Typography Layout */
+  .trip-image-overlay h4,
+  .ooty-description h4, 
+  .delhi-description h4, 
+  .paris-description h4, 
+  .icon-description h4 {
+    font-size: 14px !important;
+    margin: 0 0 4px 0 !important;
+    font-weight: 600 !important;
+    color: #111111 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Body Text / Rating Line Elements */
+  .trip-image-overlay p,
+  .ooty-description p, 
+  .delhi-description p, 
+  .paris-description p, 
+  .icon-description p {
+    font-size: 12px !important;
+    color: #555555 !important;
+    margin: 0 !important;
+    text-align: left !important;
+    overflow: visible !important;                      
+    white-space: normal !important;
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* 7. Footer Container Components */
+  .footer-container {
+    grid-template-columns: 1fr !important; 
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .bottomfooter {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
